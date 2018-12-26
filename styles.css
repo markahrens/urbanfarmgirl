@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    
+}
+
+
+h1{
+    font-family: 'Dancing Script', cursive;
+}
+
+#photo{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#about{
+    padding: 20px;
+}
+
+.social{
+    list-style-type: none;
+    padding: 0;
+}
+
+.social li{
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.fa-twitter{
+    color: #1da1f2;
+}
+
+.fa-facebook{
+    color: #3b5998;
+}
+
+.fa-pinterest{
+    color: #bd081c;
+}
+
+.fa-instrgram{
+    color: #405de6;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        grid-template-rows: 60% 40%;
+        grid-template-columns: none;
+    }
+    #photo{
+        max-height: 400px;
+    }
+}
